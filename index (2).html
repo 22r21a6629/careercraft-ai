@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ToolsAI – 16 Free AI Tools | Resume, Code, Translate & More</title>
+<meta name="description" content="ToolsAI gives you 16 powerful AI tools for free – resume writer, cover letter, cold email, business plan, code writer, translator, and more. Powered by AI.">
+<meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<style>
+  :root {
+    --primary: #6c63ff;
+    --primary-dark: #574fd6;
+    --accent: #ff6584;
+    --bg: #0f0f1a;
+    --card: #1a1a2e;
+    --card2: #16213e;
+    --text: #e8e8f0;
+    --muted: #9090b0;
+    --border: #2a2a4a;
+    --success: #4caf50;
+    --warning: #ff9800;
+    --danger: #f44336;
+    --radius: 12px;
+    --shadow: 0 4px 24px rgba(108,99,255,0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+  a { color: var(--primary); text-decoration: none; }
+
+  /* NAV */
+  nav { background: rgba(15,15,26,0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+  .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .logo { font-size: 1.4rem; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .nav-right { display: flex; align-items: center; gap: 12px; }
+  .nav-credits { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 4px 14px; font-size: 0.85rem; font-weight: 600; color: var(--primary); }
+  .btn { padding: 8px 18px; border-radius: 8px; border: none; cursor: pointer; font-size: 0.9rem; font-weight: 600; transition: all 0.2s; }
+  .btn-primary { background: var(--primary); color: #fff; }
+  .btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); }
+  .btn-outline { background: transparent; color: var(--primary); border: 1.5px solid var(--primary); }
+  .btn-outline:hover { background: var(--primary); color: #fff; }
+  .btn-sm { padding: 5px 12px; font-size: 0.8rem; }
+  .btn-success { background: var(--success); color: #fff; }
+  .btn-danger { background: var(--danger); color: #fff; }
+
+  /* AD BANNER */
+  .ad-banner { background: var(--card); border: 1px dashed var(--border); border-radius: var(--radius); padding: 12px; text-align: center; color: var(--muted); font-size: 0.8rem; margin: 12px auto; max-width: 1200px; }
+
+  /* HERO */
+  .hero { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%); padding: 60px 20px 40px; text-align: center; }
+  .hero h1 { font-size: clamp(1.8rem, 5vw, 3rem); font-weight: 900; line-height: 1.2; margin-bottom: 16px; }
+  .hero h1 span { background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero p { color: var(--muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto 28px; }
+  .hero-stats { display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; }
+  .stat { text-align: center; }
+  .stat-num { font-size: 1.6rem; font-weight: 800; color: var(--primary); }
+  .stat-label { font-size: 0.8rem; color: var(--muted); }
+
+  /* CREDITS BAR */
+  .credits-bar { background: var(--card2); border-bottom: 1px solid var(--border); padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  .credits-info { display: flex; align-items: center; gap: 10px; font-size: 0.9rem; }
+  .credits-count { font-weight: 700; color: var(--primary); font-size: 1.1rem; }
+  .credits-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+
+  /* SEARCH */
+  .search-section { max-width: 1200px; margin: 24px auto; padding: 0 20px; }
+  .search-box { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 12px 18px; width: 100%; font-size: 1rem; color: var(--text); outline: none; transition: border-color 0.2s; }
+  .search-box:focus { border-color: var(--primary); }
+  .search-box::placeholder { color: var(--muted); }
+  .filter-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  .filter-tab { padding: 5px 14px; border-radius: 20px; border: 1.5px solid var(--border); background: transparent; color: var(--muted); cursor: pointer; font-size: 0.85rem; transition: all 0.2s; }
+  .filter-tab.active, .filter-tab:hover { border-color: var(--primary); color: var(--primary); background: rgba(108,99,255,0.1); }
+
+  /* TOOLS GRID */
+  .tools-section { max-width: 1200px; margin: 0 auto; padding: 0 20px 40px; }
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+  .tool-card { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 20px; cursor: pointer; transition: all 0.25s; position: relative; overflow: hidden; }
+  .tool-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--accent)); opacity: 0; transition: opacity 0.2s; }
+  .tool-card:hover { border-color: var(--primary); transform: translateY(-3px); box-shadow: var(--shadow); }
+  .tool-card:hover::before { opacity: 1; }
+  .tool-icon { font-size: 2rem; margin-bottom: 10px; }
+  .tool-name { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+  .tool-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
+  .tool-badge { position: absolute; top: 12px; right: 12px; background: var(--primary); color: #fff; font-size: 0.7rem; padding: 2px 8px; border-radius: 10px; font-weight: 600; }
+  .tool-badge.free { background: var(--success); }
+  .section-title { font-size: 1.4rem; font-weight: 800; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+
+  /* HOW IT WORKS */
+  .how-section { background: var(--card2); padding: 50px 20px; }
+  .how-inner { max-width: 1000px; margin: 0 auto; text-align: center; }
+  .how-title { font-size: 2rem; font-weight: 800; margin-bottom: 10px; }
+  .how-sub { color: var(--muted); margin-bottom: 40px; }
+  .how-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; }
+  .how-step { background: var(--card); border-radius: var(--radius); padding: 28px 20px; text-align: center; }
+  .how-step-num { width: 48px; height: 48px; background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; margin: 0 auto 14px; }
+  .how-step-title { font-weight: 700; margin-bottom: 8px; }
+  .how-step-desc { font-size: 0.85rem; color: var(--muted); }
+
+  /* FAQ */
+  .faq-section { max-width: 800px; margin: 50px auto; padding: 0 20px; }
+  .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 10px; overflow: hidden; }
+  .faq-q { padding: 16px 20px; cursor: pointer; font-weight: 600; display: flex; justify-content: space-between; align-items: center; }
+  .faq-q:hover { background: rgba(108,99,255,0.05); }
+  .faq-a { padding: 0 20px 16px; color: var(--muted); font-size: 0.9rem; line-height: 1.6; display: none; }
+  .faq-a.open { display: block; }
+
+  /* AFFILIATE */
+  .affiliate-section { max-width: 1200px; margin: 0 auto 40px; padding: 0 20px; }
+  .affiliate-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+  .affiliate-card { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 18px; display: flex; align-items: center; gap: 14px; transition: all 0.2s; text-decoration: none; color: var(--text); }
+  .affiliate-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+  .affiliate-icon { font-size: 1.8rem; }
+  .affiliate-info { flex: 1; }
+  .affiliate-name { font-weight: 700; font-size: 0.95rem; }
+  .affiliate-desc { font-size: 0.8rem; color: var(--muted); }
+
+  /* PRICING */
+  .pricing-section { background: var(--card2); padding: 50px 20px; }
+  .pricing-inner { max-width: 900px; margin: 0 auto; text-align: center; }
+  .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-top: 30px; }
+  .price-card { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 24px 16px; text-align: center; transition: all 0.2s; }
+  .price-card.featured { border-color: var(--primary); background: rgba(108,99,255,0.1); }
+  .price-badge { background: var(--primary); color: #fff; font-size: 0.7rem; padding: 2px 10px; border-radius: 10px; display: inline-block; margin-bottom: 10px; }
+  .price-amount { font-size: 1.8rem; font-weight: 800; color: var(--primary); }
+  .price-credits { font-size: 0.9rem; color: var(--muted); margin: 6px 0; }
+  .price-per { font-size: 0.8rem; color: var(--muted); margin-bottom: 16px; }
+
+  /* FOOTER */
+  footer { background: var(--card2); border-top: 1px solid var(--border); padding: 40px 20px 20px; }
+  .footer-inner { max-width: 1200px; margin: 0 auto; }
+  .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 30px; margin-bottom: 30px; }
+  .footer-brand p { color: var(--muted); font-size: 0.85rem; margin-top: 10px; line-height: 1.6; }
+  .footer-col h4 { font-weight: 700; margin-bottom: 14px; }
+  .footer-col a { display: block; color: var(--muted); font-size: 0.85rem; margin-bottom: 8px; }
+  .footer-col a:hover { color: var(--primary); }
+  .footer-bottom { border-top: 1px solid var(--border); padding-top: 20px; text-align: center; color: var(--muted); font-size: 0.8rem; }
+
+  /* WHATSAPP */
+  .whatsapp-btn { position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.4); z-index: 200; transition: transform 0.2s; }
+  .whatsapp-btn:hover { transform: scale(1.1); }
+
+  /* MODAL */
+  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); backdrop-filter: blur(4px); z-index: 300; display: none; align-items: center; justify-content: center; padding: 20px; }
+  .modal-overlay.open { display: flex; }
+  .modal { background: var(--card); border: 1.5px solid var(--border); border-radius: 16px; padding: 28px; max-width: 560px; width: 100%; max-height: 90vh; overflow-y: auto; position: relative; animation: modalIn 0.2s ease; }
+  @keyframes modalIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .modal-close { position: absolute; top: 16px; right: 16px; background: none; border: none; color: var(--muted); cursor: pointer; font-size: 1.4rem; }
+  .modal-title { font-size: 1.3rem; font-weight: 800; margin-bottom: 20px; }
+  .form-group { margin-bottom: 16px; }
+  .form-label { font-size: 0.85rem; font-weight: 600; color: var(--muted); margin-bottom: 6px; display: block; }
+  .form-input { width: 100%; background: var(--bg); border: 1.5px solid var(--border); border-radius: 8px; padding: 10px 14px; color: var(--text); font-size: 0.9rem; outline: none; transition: border-color 0.2s; font-family: inherit; }
+  .form-input:focus { border-color: var(--primary); }
+  .form-select { width: 100%; background: var(--bg); border: 1.5px solid var(--border); border-radius: 8px; padding: 10px 14px; color: var(--text); font-size: 0.9rem; outline: none; }
+  .result-box { background: var(--bg); border: 1.5px solid var(--border); border-radius: 8px; padding: 16px; min-height: 120px; font-size: 0.9rem; line-height: 1.7; white-space: pre-wrap; color: var(--text); }
+  .result-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+  .loading-spinner { display: inline-block; width: 18px; height: 18px; border: 2px solid rgba(255,255,255,0.3); border-top-color: #fff; border-radius: 50%; animation: spin 0.7s linear infinite; vertical-align: middle; margin-right: 6px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* AUTH MODAL */
+  .auth-tabs { display: flex; gap: 0; margin-bottom: 20px; border: 1.5px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .auth-tab { flex: 1; padding: 10px; text-align: center; cursor: pointer; font-weight: 600; font-size: 0.9rem; color: var(--muted); background: var(--bg); transition: all 0.2s; border: none; }
+  .auth-tab.active { background: var(--primary); color: #fff; }
+
+  /* PAYWALL */
+  .paywall-box { background: linear-gradient(135deg, var(--card2), #1a1a3e); border: 1.5px solid var(--primary); border-radius: var(--radius); padding: 28px; text-align: center; }
+  .paywall-box h3 { font-size: 1.2rem; font-weight: 800; margin-bottom: 8px; }
+  .paywall-box p { color: var(--muted); font-size: 0.9rem; margin-bottom: 20px; }
+  .paywall-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; }
+  .paywall-opt { background: var(--card); border: 1.5px solid var(--border); border-radius: 10px; padding: 14px 10px; cursor: pointer; text-align: center; transition: all 0.2s; }
+  .paywall-opt:hover, .paywall-opt.selected { border-color: var(--primary); background: rgba(108,99,255,0.1); }
+  .paywall-opt-price { font-size: 1.2rem; font-weight: 800; color: var(--primary); }
+  .paywall-opt-credits { font-size: 0.8rem; color: var(--muted); }
+  .paywall-opt-tag { font-size: 0.7rem; background: var(--accent); color: #fff; border-radius: 8px; padding: 1px 6px; display: inline-block; margin-top: 4px; }
+
+  /* AD WATCH */
+  .ad-watch-modal { text-align: center; }
+  .ad-display { background: linear-gradient(135deg, #1a1a3e, #2a1a4e); border: 2px solid var(--primary); border-radius: 12px; padding: 40px 20px; margin: 20px 0; min-height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .ad-progress { width: 100%; height: 6px; background: var(--border); border-radius: 3px; margin-top: 16px; overflow: hidden; }
+  .ad-progress-bar { height: 100%; background: linear-gradient(90deg, var(--primary), var(--accent)); border-radius: 3px; transition: width 1s linear; }
+  .ad-count { font-size: 0.85rem; color: var(--muted); margin-top: 8px; }
+  .daily-progress { display: flex; align-items: center; gap: 10px; margin: 10px 0; }
+  .daily-bar { flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+  .daily-bar-fill { height: 100%; background: linear-gradient(90deg, var(--success), var(--primary)); border-radius: 4px; transition: width 0.5s; }
+
+  /* TOAST */
+  #toast-container { position: fixed; bottom: 90px; right: 20px; z-index: 999; display: flex; flex-direction: column; gap: 8px; }
+  .toast { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 18px; font-size: 0.9rem; max-width: 320px; box-shadow: 0 4px 20px rgba(0,0,0,0.4); animation: toastIn 0.3s ease; display: flex; align-items: center; gap: 8px; }
+  .toast.success { border-color: var(--success); }
+  .toast.error { border-color: var(--danger); }
+  .toast.warning { border-color: var(--warning); }
+  @keyframes toastIn { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
+
+  /* PAGES */
+  .page { display: none; max-width: 800px; margin: 40px auto; padding: 0 20px 40px; }
+  .page.active { display: block; }
+  .page h2 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; }
+  .page .sub { color: var(--muted); margin-bottom: 30px; }
+  .page h3 { font-size: 1.1rem; font-weight: 700; margin: 24px 0 10px; color: var(--primary); }
+  .page p { color: var(--muted); line-height: 1.7; margin-bottom: 12px; font-size: 0.95rem; }
+
+  /* LANG SWITCHER */
+  .lang-switcher { display: flex; gap: 4px; }
+  .lang-btn { background: var(--card); border: 1px solid var(--border); color: var(--muted); padding: 3px 8px; border-radius: 6px; cursor: pointer; font-size: 0.75rem; }
+  .lang-btn.active { border-color: var(--primary); color: var(--primary); }
+
+  /* INTERVIEW CHAT */
+  .chat-box { background: var(--bg); border: 1.5px solid var(--border); border-radius: 8px; height: 280px; overflow-y: auto; padding: 12px; margin-bottom: 10px; }
+  .chat-msg { padding: 8px 12px; border-radius: 10px; margin-bottom: 8px; max-width: 85%; font-size: 0.88rem; line-height: 1.5; }
+  .chat-msg.ai { background: var(--card2); color: var(--text); margin-right: auto; }
+  .chat-msg.user { background: var(--primary); color: #fff; margin-left: auto; }
+  .chat-input-row { display: flex; gap: 8px; }
+  .chat-input { flex: 1; }
+
+  /* TOOL REQUEST */
+  .request-section { background: var(--card2); border: 1.5px dashed var(--border); border-radius: var(--radius); padding: 24px; text-align: center; margin: 20px 0; }
+
+  /* IMAGE EDITOR */
+  .image-editor { display: flex; flex-direction: column; gap: 14px; }
+  .filter-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+  .filter-btn { padding: 7px 14px; border-radius: 8px; border: 1.5px solid var(--border); background: var(--card2); color: var(--text); cursor: pointer; font-size: 0.85rem; transition: all 0.2s; }
+  .filter-btn:hover { border-color: var(--primary); color: var(--primary); }
+  .canvas-area { background: var(--bg); border: 1.5px solid var(--border); border-radius: 8px; min-height: 200px; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 0.9rem; overflow: hidden; }
+  canvas { max-width: 100%; border-radius: 8px; display: none; }
+
+  @media (max-width: 600px) {
+    .hero { padding: 40px 16px 30px; }
+    .nav-inner { padding: 0 14px; }
+    .tools-grid { grid-template-columns: 1fr; }
+    .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+<script async="async" data-cfasync="false" src="//thubanoa.com/1?z=YOUR_PROPELLER_ZONE_ID"></script>
+<!-- PropellerAds Push Notifications -->
+<script>(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('glizauvo.net','YOUR_PROPELLER_ZONE_ID',document.createElement('script'))</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">🧰 ToolsAI</div>
+    <div class="nav-right">
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" onclick="setLang('hi')">हि</button>
+        <button class="lang-btn" onclick="setLang('te')">తె</button>
+        <button class="lang-btn" onclick="setLang('ta')">த</button>
+      </div>
+      <div class="nav-credits" id="nav-credits">🪙 0 Credits</div>
+      <button class="btn btn-outline btn-sm" onclick="showPage('home')" id="nav-home-btn">Home</button>
+      <button class="btn btn-primary btn-sm" id="auth-btn" onclick="openAuth()">Sign In</button>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGES -->
+<div id="page-home">
+
+<!-- AD TOP -->
+<div class="ad-banner" style="margin-top:10px;">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1111111111" data-ad-format="auto" data-full-width-responsive="true"></ins>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>16 Free AI Tools,<br><span>One Platform</span></h1>
+  <p>Resume writer, code helper, translator, business plan generator & more — all powered by AI, all free to start.</p>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-num">16+</div><div class="stat-label">AI Tools</div></div>
+    <div class="stat"><div class="stat-num">10</div><div class="stat-label">Free Credits</div></div>
+    <div class="stat"><div class="stat-num">₹0</div><div class="stat-label">To Start</div></div>
+    <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Free AI</div></div>
+  </div>
+</div>
+
+<!-- CREDITS BAR -->
+<div class="credits-bar" id="credits-bar">
+  <div class="credits-info">
+    <span>💳 Credits:</span>
+    <span class="credits-count" id="credits-display">0</span>
+    <span style="color:var(--muted);font-size:0.8rem;" id="user-label">Sign in to get 10 free credits</span>
+  </div>
+  <div class="credits-actions">
+    <button class="btn btn-sm" style="background:var(--success);color:#fff;" onclick="openAdWatch()">📺 Watch Ad → +1 Credit</button>
+    <button class="btn btn-primary btn-sm" onclick="openBuyCredits()">💳 Buy Credits</button>
+  </div>
+</div>
+
+<!-- SEARCH -->
+<div class="search-section">
+  <input type="text" class="search-box" placeholder="🔍 Search tools (e.g. resume, code, translate...)" id="search-input" oninput="filterTools()">
+  <div class="filter-tabs">
+    <button class="filter-tab active" onclick="filterCategory('all',this)">All</button>
+    <button class="filter-tab" onclick="filterCategory('career',this)">Career</button>
+    <button class="filter-tab" onclick="filterCategory('business',this)">Business</button>
+    <button class="filter-tab" onclick="filterCategory('creative',this)">Creative</button>
+    <button class="filter-tab" onclick="filterCategory('tech',this)">Tech</button>
+    <button class="filter-tab" onclick="filterCategory('image',this)">Image</button>
+  </div>
+</div>
+
+<!-- TOOLS GRID -->
+<div class="tools-section">
+  <div class="section-title">🛠️ AI Tools</div>
+  <div class="tools-grid" id="tools-grid"></div>
+</div>
+
+<!-- AD MIDDLE -->
+<div class="ad-banner">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="2222222222" data-ad-format="auto" data-full-width-responsive="true"></ins>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="how-section">
+  <div class="how-inner">
+    <div class="how-title">How It Works</div>
+    <div class="how-sub">Start generating in under 60 seconds</div>
+    <div class="how-steps">
+      <div class="how-step"><div class="how-step-num">1</div><div class="how-step-title">Sign Up Free</div><div class="how-step-desc">Create account, get 10 free credits instantly — no card needed</div></div>
+      <div class="how-step"><div class="how-step-num">2</div><div class="how-step-title">Pick a Tool</div><div class="how-step-desc">Choose from 16 AI tools for your task</div></div>
+      <div class="how-step"><div class="how-step-num">3</div><div class="how-step-title">Fill the Form</div><div class="how-step-desc">Enter your details in the simple form</div></div>
+      <div class="how-step"><div class="how-step-num">4</div><div class="how-step-title">Get Results</div><div class="how-step-desc">AI generates in ~30 seconds. Copy, download, or share!</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- AFFILIATE TOOLS -->
+<div class="affiliate-section" style="margin-top:40px;">
+  <div class="section-title">🌐 More AI Tools We Recommend</div>
+  <div class="affiliate-grid">
+    <a href="https://canva.com" target="_blank" class="affiliate-card"><span class="affiliate-icon">🎨</span><div class="affiliate-info"><div class="affiliate-name">Canva AI</div><div class="affiliate-desc">Design & photo editing</div></div></a>
+    <a href="https://remove.bg" target="_blank" class="affiliate-card"><span class="affiliate-icon">✂️</span><div class="affiliate-info"><div class="affiliate-name">Remove.bg</div><div class="affiliate-desc">Background remover</div></div></a>
+    <a href="https://runwayml.com" target="_blank" class="affiliate-card"><span class="affiliate-icon">🎬</span><div class="affiliate-info"><div class="affiliate-name">Runway ML</div><div class="affiliate-desc">AI video generation</div></div></a>
+    <a href="https://kapwing.com" target="_blank" class="affiliate-card"><span class="affiliate-icon">✂️</span><div class="affiliate-info"><div class="affiliate-name">Kapwing</div><div class="affiliate-desc">AI video editor</div></div></a>
+    <a href="https://pika.art" target="_blank" class="affiliate-card"><span class="affiliate-icon">🎥</span><div class="affiliate-info"><div class="affiliate-name">Pika Labs</div><div class="affiliate-desc">Text to video</div></div></a>
+    <a href="https://midjourney.com" target="_blank" class="affiliate-card"><span class="affiliate-icon">🖼️</span><div class="affiliate-info"><div class="affiliate-name">Midjourney</div><div class="affiliate-desc">AI image generation</div></div></a>
+    <a href="https://elevenlabs.io" target="_blank" class="affiliate-card"><span class="affiliate-icon">🎙️</span><div class="affiliate-info"><div class="affiliate-name">ElevenLabs</div><div class="affiliate-desc">AI voice generator</div></div></a>
+    <a href="https://heygen.com" target="_blank" class="affiliate-card"><span class="affiliate-icon">🤖</span><div class="affiliate-info"><div class="affiliate-name">HeyGen</div><div class="affiliate-desc">AI avatar videos</div></div></a>
+    <a href="https://descript.com" target="_blank" class="affiliate-card"><span class="affiliate-icon">📝</span><div class="affiliate-info"><div class="affiliate-name">Descript</div><div class="affiliate-desc">Edit video by text</div></div></a>
+  </div>
+</div>
+
+<!-- PRICING -->
+<div class="pricing-section">
+  <div class="pricing-inner">
+    <div class="how-title">Simple Pricing</div>
+    <div class="how-sub">Watch ads for free credits, or buy a pack when you need more</div>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="price-badge">Free</div>
+        <div class="price-amount">₹0</div>
+        <div class="price-credits">10 credits on signup</div>
+        <div class="price-per">+1 free/day via ads</div>
+        <button class="btn btn-outline" style="width:100%" onclick="openAuth()">Get Started</button>
+      </div>
+      <div class="price-card">
+        <div class="price-amount">₹99</div>
+        <div class="price-credits">50 credits</div>
+        <div class="price-per">₹1.98 per credit</div>
+        <button class="btn btn-primary" style="width:100%" onclick="buyPack(50,99)">Buy</button>
+      </div>
+      <div class="price-card">
+        <div class="price-amount">₹199</div>
+        <div class="price-credits">150 credits</div>
+        <div class="price-per">₹1.33 per credit</div>
+        <button class="btn btn-primary" style="width:100%" onclick="buyPack(150,199)">Buy</button>
+      </div>
+      <div class="price-card featured">
+        <div class="price-badge">Best Value</div>
+        <div class="price-amount">₹499</div>
+        <div class="price-credits">500 credits</div>
+        <div class="price-per">₹1.00 per credit</div>
+        <button class="btn btn-primary" style="width:100%" onclick="buyPack(500,499)">Buy</button>
+      </div>
+      <div class="price-card">
+        <div class="price-badge" style="background:var(--accent)">Pro</div>
+        <div class="price-amount">₹749</div>
+        <div class="price-credits">Unlimited/month</div>
+        <div class="price-per">No ads, priority AI</div>
+        <button class="btn btn-primary" style="width:100%;background:var(--accent)" onclick="buyPack('unlimited',749)">Go Pro</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="faq-section">
+  <div class="section-title" style="text-align:center;justify-content:center;">❓ Frequently Asked Questions</div>
+  <div id="faq-list"></div>
+</div>
+
+<!-- TOOL REQUEST -->
+<div class="tools-section">
+  <div class="request-section">
+    <div style="font-size:2rem;margin-bottom:10px;">💡</div>
+    <div style="font-weight:700;font-size:1.1rem;margin-bottom:6px;">Want a new AI tool?</div>
+    <div style="color:var(--muted);font-size:0.9rem;margin-bottom:16px;">Suggest a tool and we may build it in the next update!</div>
+    <div style="display:flex;gap:8px;max-width:400px;margin:0 auto;">
+      <input type="text" class="form-input" id="tool-request-input" placeholder="e.g. AI cover letter for freshers">
+      <button class="btn btn-primary" onclick="submitToolRequest()">Submit</button>
+    </div>
+  </div>
+</div>
+
+<!-- AD FOOTER -->
+<div class="ad-banner" style="margin-bottom:20px;">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="3333333333" data-ad-format="auto" data-full-width-responsive="true"></ins>
+</div>
+
+</div><!-- end page-home -->
+
+<!-- PRIVACY PAGE -->
+<div id="page-privacy" class="page">
+  <h2>Privacy Policy</h2>
+  <p class="sub">Last updated: March 2026</p>
+  <h3>1. Information We Collect</h3>
+  <p>We collect information you provide when you create an account (name, email), use our AI tools (your input text), and make payments (handled securely by Razorpay — we never store card details).</p>
+  <h3>2. How We Use Your Information</h3>
+  <p>We use your information to provide and improve our services, process payments, and send service-related emails. We do not sell your personal data to third parties.</p>
+  <h3>3. AI-Generated Content</h3>
+  <p>Content you input to generate AI results is sent to our AI provider (Cloudflare Workers AI). Inputs are not stored permanently and are not used to train AI models.</p>
+  <h3>4. Cookies & Analytics</h3>
+  <p>We use cookies to keep you logged in and to serve relevant ads through Google AdSense. You can disable cookies in your browser settings.</p>
+  <h3>5. Data Security</h3>
+  <p>We use industry-standard security measures. However, no internet transmission is 100% secure. Please protect your account credentials.</p>
+  <h3>6. Contact</h3>
+  <p>For privacy questions, email us at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="40333530302f323400342f2f2c3321296e292e">[email&#160;protected]</a></p>
+  <button class="btn btn-outline" onclick="showPage('home')" style="margin-top:20px;">← Back to Home</button>
+</div>
+
+<!-- TERMS PAGE -->
+<div id="page-terms" class="page">
+  <h2>Terms of Service</h2>
+  <p class="sub">Last updated: March 2026</p>
+  <h3>1. Acceptance</h3>
+  <p>By using ToolsAI, you agree to these terms. If you do not agree, please do not use our service.</p>
+  <h3>2. Free Credits & Payments</h3>
+  <p>New accounts receive 10 free credits. Purchased credits are non-refundable except in cases of technical failure. Pro subscriptions can be cancelled at any time; no refund for partial months.</p>
+  <h3>3. Acceptable Use</h3>
+  <p>You agree not to use ToolsAI to generate harmful, illegal, or misleading content. AI-generated content must be reviewed by you before professional use. We are not liable for errors in AI output.</p>
+  <h3>4. Intellectual Property</h3>
+  <p>You own the content you generate. ToolsAI retains rights to the platform, branding, and underlying systems.</p>
+  <h3>5. Limitation of Liability</h3>
+  <p>ToolsAI is provided "as is." We are not liable for any indirect damages arising from use of the service.</p>
+  <button class="btn btn-outline" onclick="showPage('home')" style="margin-top:20px;">← Back to Home</button>
+</div>
+
+<!-- CONTACT PAGE -->
+<div id="page-contact" class="page">
+  <h2>Contact Us</h2>
+  <p class="sub">We usually respond within 24 hours.</p>
+  <div class="form-group"><label class="form-label">Your Name</label><input class="form-input" id="contact-name" placeholder="Enter your name"></div>
+  <div class="form-group"><label class="form-label">Email</label><input class="form-input" id="contact-email" type="email" placeholder="your@email.com"></div>
+  <div class="form-group"><label class="form-label">Subject</label><input class="form-input" id="contact-subject" placeholder="e.g. Can't generate resume"></div>
+  <div class="form-group"><label class="form-label">Message</label><textarea class="form-input" id="contact-msg" rows="5" placeholder="Describe your issue or feedback..."></textarea></div>
+  <button class="btn btn-primary" onclick="submitContact()">Send Message</button>
+  <p style="margin-top:20px;">Or email directly: <a href="/cdn-cgi/l/email-protection#6a191f1a1a05181e2a1e050506190b03440304"><span class="__cf_email__" data-cfemail="790a0c0909160b0d390d1616150a1810571017">[email&#160;protected]</span></a></p>
+  <button class="btn btn-outline" onclick="showPage('home')" style="margin-top:10px;">← Back to Home</button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">🧰 ToolsAI</div>
+        <p>16 free AI tools to help you work smarter — resume, code, translate, business plans & more.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Tools</h4>
+        <a href="#" onclick="openTool('resume')">Resume Writer</a>
+        <a href="#" onclick="openTool('coverletter')">Cover Letter</a>
+        <a href="#" onclick="openTool('interview')">Interview Prep</a>
+        <a href="#" onclick="openTool('business')">Business Plan</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#" onclick="showPage('privacy')">Privacy Policy</a>
+        <a href="#" onclick="showPage('terms')">Terms of Service</a>
+        <a href="#" onclick="showPage('contact')">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Credits</h4>
+        <a href="#" onclick="openBuyCredits()">Buy Credits</a>
+        <a href="#" onclick="openAdWatch()">Watch Ads (Free)</a>
+        <a href="#" onclick="openAuth()">Sign Up Free</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 ToolsAI. Made with ❤️ in India. Powered by Cloudflare AI.
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/919XXXXXXXXX" target="_blank" class="whatsapp-btn" title="Chat on WhatsApp">💬</a>
+
+<!-- TOAST CONTAINER -->
+<div id="toast-container"></div>
+
+<!-- ======= MODALS ======= -->
+
+<!-- AUTH MODAL -->
+<div class="modal-overlay" id="auth-modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('auth-modal')">✕</button>
+    <div class="auth-tabs">
+      <button class="auth-tab active" id="signin-tab" onclick="switchAuthTab('signin')">Sign In</button>
+      <button class="auth-tab" id="signup-tab" onclick="switchAuthTab('signup')">Sign Up</button>
+    </div>
+    <div id="signin-form">
+      <div class="form-group"><label class="form-label">Email</label><input class="form-input" id="signin-email" type="email" placeholder="your@email.com"></div>
+      <div class="form-group"><label class="form-label">Password</label><input class="form-input" id="signin-pass" type="password" placeholder="Password"></div>
+      <button class="btn btn-primary" style="width:100%" onclick="doSignIn()">Sign In</button>
+    </div>
+    <div id="signup-form" style="display:none">
+      <div class="form-group"><label class="form-label">Name</label><input class="form-input" id="signup-name" placeholder="Your name"></div>
+      <div class="form-group"><label class="form-label">Email</label><input class="form-input" id="signup-email" type="email" placeholder="your@email.com"></div>
+      <div class="form-group"><label class="form-label">Password</label><input class="form-input" id="signup-pass" type="password" placeholder="Create password"></div>
+      <button class="btn btn-primary" style="width:100%" onclick="doSignUp()">Sign Up & Get 10 Free Credits 🎁</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOOL MODAL -->
+<div class="modal-overlay" id="tool-modal">
+  <div class="modal" style="max-width:640px;">
+    <button class="modal-close" onclick="closeModal('tool-modal')">✕</button>
+    <div class="modal-title" id="tool-modal-title">Tool</div>
+    <div id="tool-modal-body"></div>
+  </div>
+</div>
+
+<!-- BUY CREDITS MODAL -->
+<div class="modal-overlay" id="buy-modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('buy-modal')">✕</button>
+    <div class="modal-title">💳 Buy Credits</div>
+    <div class="paywall-options">
+      <div class="paywall-opt" onclick="buyPack(50,99)"><div class="paywall-opt-price">₹99</div><div class="paywall-opt-credits">50 Credits</div></div>
+      <div class="paywall-opt" onclick="buyPack(150,199)"><div class="paywall-opt-price">₹199</div><div class="paywall-opt-credits">150 Credits</div></div>
+      <div class="paywall-opt" onclick="buyPack(500,499)"><div class="paywall-opt-price">₹499</div><div class="paywall-opt-credits">500 Credits</div><div class="paywall-opt-tag">Best Value</div></div>
+      <div class="paywall-opt" onclick="buyPack('unlimited',749)"><div class="paywall-opt-price">₹749</div><div class="paywall-opt-credits">Unlimited/mo</div><div class="paywall-opt-tag">Pro</div></div>
+    </div>
+    <p style="color:var(--muted);font-size:0.8rem;margin-top:16px;text-align:center;">Secure payment via Razorpay. UPI, cards, net banking accepted.</p>
+  </div>
+</div>
+
+<!-- AD WATCH MODAL -->
+<div class="modal-overlay" id="adwatch-modal">
+  <div class="modal ad-watch-modal">
+    <button class="modal-close" onclick="closeModal('adwatch-modal');stopAd()">✕</button>
+    <div class="modal-title">📺 Watch Ads → Earn Credits</div>
+    <div class="daily-progress">
+      <span style="font-size:0.85rem;color:var(--muted);">Today's free credits:</span>
+      <div class="daily-bar"><div class="daily-bar-fill" id="daily-bar-fill"></div></div>
+      <span id="daily-count" style="font-size:0.85rem;font-weight:700;color:var(--primary);">0/10</span>
+    </div>
+    <div id="ad-watch-content">
+      <p style="color:var(--muted);font-size:0.9rem;margin-bottom:16px;">Watch 3 ads to earn 1 credit. You can earn up to 10 credits per day (30 ads).</p>
+      <button class="btn btn-primary" style="width:100%" onclick="startAdSession()">▶ Start Watching</button>
+    </div>
+    <div id="ad-playing" style="display:none;">
+      <div class="ad-display" id="ad-display-box">
+        <div style="font-size:2.5rem;" id="ad-emoji">📱</div>
+        <div style="font-weight:700;margin-top:12px;" id="ad-title">Loading ad...</div>
+        <div style="color:var(--muted);font-size:0.85rem;margin-top:4px;" id="ad-subtitle"></div>
+        <div class="ad-progress" style="margin-top:18px;width:80%"><div class="ad-progress-bar" id="ad-progress-bar" style="width:0%"></div></div>
+        <div class="ad-count" id="ad-countdown">⏱ 15 seconds remaining</div>
+      </div>
+      <div id="ad-counter-info" style="color:var(--muted);font-size:0.85rem;margin-top:8px;">Ad <span id="cur-ad">1</span> of 3</div>
+      <button class="btn btn-success" id="collect-btn" style="width:100%;margin-top:12px;display:none;" onclick="collectCredit()">🎁 Collect 1 Credit!</button>
+    </div>
+  </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// ===== CONFIG =====
+const WORKER_URL = 'https://toolsai-ai.1804735sumanthk.workers.dev';
+
+// ===== TOOLS DATA =====
+const TOOLS = [
+  { id:'resume', name:'Resume Writer', icon:'📄', desc:'ATS-optimized resume tailored to any job description', category:'career', badge:'Popular' },
+  { id:'coverletter', name:'Cover Letter', icon:'✉️', desc:'Personalized cover letter that gets interviews', category:'career' },
+  { id:'interview', name:'Interview Prep', icon:'🎤', desc:'AI mock interview with feedback on your answers', category:'career' },
+  { id:'linkedin', name:'LinkedIn Bio', icon:'💼', desc:'Headline + About section that attracts recruiters', category:'career' },
+  { id:'coldemail', name:'Cold Email Writer', icon:'📧', desc:'3 cold email variations for any outreach goal', category:'business' },
+  { id:'business', name:'Business Plan', icon:'📊', desc:'Full business plan with market analysis & financials', category:'business' },
+  { id:'salary', name:'Salary Negotiation', icon:'💰', desc:'Script to negotiate a higher salary confidently', category:'business' },
+  { id:'pitch', name:'Pitch Deck Script', icon:'🎯', desc:'Investor pitch deck outline and talking points', category:'business' },
+  { id:'youtube', name:'YouTube Script', icon:'🎬', desc:'Engaging video script with hook, body & CTA', category:'creative' },
+  { id:'captions', name:'Social Media Captions', icon:'📱', desc:'5 captions + hashtags for Instagram, Twitter, LinkedIn', category:'creative' },
+  { id:'blog', name:'Blog Post Writer', icon:'📰', desc:'SEO-optimized blog post on any topic', category:'creative' },
+  { id:'adcopy', name:'Ad Copy Writer', icon:'📣', desc:'Compelling ad copy for Google, Facebook, Instagram', category:'creative' },
+  { id:'code', name:'Code Writer', icon:'💻', desc:'Write, fix, or explain code in any language', category:'tech' },
+  { id:'translate', name:'Translator', icon:'🌐', desc:'Translate text between 50+ languages accurately', category:'tech' },
+  { id:'image', name:'AI Image Editor', icon:'🖼️', desc:'Apply filters and effects to your images locally', category:'image' },
+  { id:'imageprompt', name:'AI Image Prompts', icon:'🎨', desc:'5 detailed prompts for Midjourney, DALL-E, Stable Diffusion', category:'creative' },
+];
+
+const FAQS = [
+  { q:'Are the AI tools really free?', a:'Yes! You get 10 free credits when you sign up. Each tool use costs 1 credit. You can also earn 1 free credit by watching 3 ads, up to 10 credits per day.' },
+  { q:'How do credits work?', a:'Every AI generation costs 1 credit. You get 10 free credits on signup. You can earn more by watching ads or buy credit packs starting at ₹99.' },
+  { q:'What AI powers ToolsAI?', a:'We use Cloudflare Workers AI with the Llama 3.1 model. It\'s fast, private, and 100% free to run — so savings are passed to you.' },
+  { q:'Is my data private?', a:'Yes. Your inputs are sent to the AI to generate results but are not stored permanently or used to train AI models. See our Privacy Policy for details.' },
+  { q:'What payment methods are supported?', a:'We accept UPI, debit/credit cards, and net banking via Razorpay — all major Indian banks supported.' },
+  { q:'Can I get a refund?', a:'Purchased credits are non-refundable unless there is a technical error on our part. Free credits expire after 90 days of inactivity.' },
+  { q:'How many free ads can I watch per day?', a:'You can earn up to 10 free credits per day by watching ads (3 ads = 1 credit, so 30 ads maximum per day). Limit resets at midnight.' },
+  { q:'Is there a Pro plan?', a:'Yes! For ₹749/month you get unlimited generations with no ads and priority AI processing.' },
+];
+
+const AD_SAMPLES = [
+  { emoji:'📱', title:'Reliance Jio — Unlimited 5G', subtitle:'Experience blazing fast internet. Plans starting ₹239/month' },
+  { emoji:'🛒', title:'Flipkart Big Sale — Up to 80% off', subtitle:'Shop electronics, fashion & more. Limited time offer!' },
+  { emoji:'🎓', title:'Coursera — Learn from top universities', subtitle:'Free trial for 7 days. Certificates from IIT, IIM & more.' },
+  { emoji:'🏦', title:'HDFC Bank — Zero fee savings account', subtitle:'Open online in 5 minutes. Get ₹500 cashback on first transaction.' },
+  { emoji:'🚗', title:'Ola Electric — Book your Ola S1', subtitle:'Save up to ₹20,000 on electric scooter. Zero down payment.' },
+  { emoji:'🍕', title:'Swiggy — Free delivery all month', subtitle:'Order your favourite food. Use code TOOLSAI for ₹100 off.' },
+];
+
+// ===== STATE =====
+let state = {
+  user: JSON.parse(localStorage.getItem('tai_user') || 'null'),
+  credits: parseInt(localStorage.getItem('tai_credits') || '0'),
+  isPro: localStorage.getItem('tai_pro') === 'true',
+  adDay: localStorage.getItem('tai_ad_day') || '',
+  adCount: parseInt(localStorage.getItem('tai_ad_count') || '0'),
+  history: JSON.parse(localStorage.getItem('tai_history') || '[]'),
+  lang: localStorage.getItem('tai_lang') || 'en',
+  currentFilter: 'all',
+  adSession: { running: false, adsWatched: 0, timer: null },
+};
+
+// ===== SAVE STATE =====
+function saveState() {
+  if (state.user) localStorage.setItem('tai_user', JSON.stringify(state.user));
+  localStorage.setItem('tai_credits', state.credits);
+  if (state.isPro) localStorage.setItem('tai_pro', 'true');
+  localStorage.setItem('tai_ad_day', state.adDay);
+  localStorage.setItem('tai_ad_count', state.adCount);
+  localStorage.setItem('tai_history', JSON.stringify(state.history.slice(-50)));
+  localStorage.setItem('tai_lang', state.lang);
+}
+
+// ===== UI UPDATES =====
+function updateUI() {
+  const cd = document.getElementById('credits-display');
+  const nc = document.getElementById('nav-credits');
+  const ul = document.getElementById('user-label');
+  const ab = document.getElementById('auth-btn');
+  if (cd) cd.textContent = state.isPro ? '∞' : state.credits;
+  if (nc) nc.textContent = '🪙 ' + (state.isPro ? 'Pro' : state.credits);
+  if (ul && state.user) ul.textContent = 'Welcome, ' + state.user.name;
+  if (ab) {
+    if (state.user) { ab.textContent = 'Sign Out'; ab.onclick = doSignOut; }
+    else { ab.textContent = 'Sign In'; ab.onclick = openAuth; }
+  }
+}
+
+// ===== TOAST =====
+function showToast(msg, type = 'info') {
+  const icons = { success: '✅', error: '❌', warning: '⚠️', info: 'ℹ️' };
+  const el = document.createElement('div');
+  el.className = 'toast ' + type;
+  el.innerHTML = `<span>${icons[type] || 'ℹ️'}</span><span>${msg}</span>`;
+  document.getElementById('toast-container').appendChild(el);
+  setTimeout(() => el.remove(), 3500);
+}
+
+// ===== PAGE NAVIGATION =====
+function showPage(p) {
+  document.getElementById('page-home').style.display = p === 'home' ? 'block' : 'none';
+  ['privacy','terms','contact'].forEach(pg => {
+    const el = document.getElementById('page-' + pg);
+    if (el) el.classList.toggle('active', pg === p);
+  });
+  window.scrollTo(0,0);
+}
+
+// ===== MODALS =====
+function openModal(id) { document.getElementById(id).classList.add('open'); }
+function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+
+// ===== AUTH =====
+function openAuth() { openModal('auth-modal'); }
+function switchAuthTab(tab) {
+  document.getElementById('signin-form').style.display = tab === 'signin' ? 'block' : 'none';
+  document.getElementById('signup-form').style.display = tab === 'signup' ? 'block' : 'none';
+  document.getElementById('signin-tab').classList.toggle('active', tab === 'signin');
+  document.getElementById('signup-tab').classList.toggle('active', tab === 'signup');
+}
+function doSignIn() {
+  const email = document.getElementById('signin-email').value.trim();
+  const pass = document.getElementById('signin-pass').value;
+  if (!email || !pass) { showToast('Please fill all fields', 'warning'); return; }
+  const users = JSON.parse(localStorage.getItem('tai_users') || '{}');
+  const u = users[email];
+  if (!u || u.pass !== pass) { showToast('Invalid email or password', 'error'); return; }
+  state.user = { name: u.name, email };
+  state.credits = u.credits || 0;
+  state.isPro = u.isPro || false;
+  saveState();
+  closeModal('auth-modal');
+  updateUI();
+  showToast('Welcome back, ' + state.user.name + '!', 'success');
+}
+function doSignUp() {
+  const name = document.getElementById('signup-name').value.trim();
+  const email = document.getElementById('signup-email').value.trim();
+  const pass = document.getElementById('signup-pass').value;
+  if (!name || !email || !pass) { showToast('Please fill all fields', 'warning'); return; }
+  if (pass.length < 6) { showToast('Password must be at least 6 characters', 'warning'); return; }
+  const users = JSON.parse(localStorage.getItem('tai_users') || '{}');
+  if (users[email]) { showToast('Email already registered. Please sign in.', 'warning'); return; }
+  users[email] = { name, pass, credits: 10, isPro: false };
+  localStorage.setItem('tai_users', JSON.stringify(users));
+  state.user = { name, email };
+  state.credits = 10;
+  state.isPro = false;
+  saveState();
+  closeModal('auth-modal');
+  updateUI();
+  showToast('Welcome ' + name + '! 🎁 You got 10 free credits!', 'success');
+}
+function doSignOut() {
+  state.user = null;
+  state.credits = 0;
+  state.isPro = false;
+  localStorage.removeItem('tai_user');
+  localStorage.removeItem('tai_credits');
+  localStorage.removeItem('tai_pro');
+  updateUI();
+  showToast('Signed out', 'info');
+}
+
+// ===== TOOLS GRID =====
+function renderTools(tools) {
+  const grid = document.getElementById('tools-grid');
+  if (!grid) return;
+  grid.innerHTML = tools.map(t => `
+    <div class="tool-card" onclick="openTool('${t.id}')" data-cat="${t.category}">
+      ${t.badge ? `<div class="tool-badge ${t.badge === 'Free' ? 'free' : ''}">${t.badge}</div>` : ''}
+      <div class="tool-icon">${t.icon}</div>
+      <div class="tool-name">${t.name}</div>
+      <div class="tool-desc">${t.desc}</div>
+    </div>
+  `).join('');
+}
+
+function filterTools() {
+  const q = document.getElementById('search-input').value.toLowerCase();
+  const cat = state.currentFilter;
+  const filtered = TOOLS.filter(t =>
+    (cat === 'all' || t.category === cat) &&
+    (t.name.toLowerCase().includes(q) || t.desc.toLowerCase().includes(q))
+  );
+  renderTools(filtered);
+}
+
+function filterCategory(cat, btn) {
+  state.currentFilter = cat;
+  document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  filterTools();
+}
+
+// ===== OPEN TOOL =====
+function openTool(id) {
+  const tool = TOOLS.find(t => t.id === id);
+  if (!tool) return;
+  document.getElementById('tool-modal-title').textContent = tool.icon + ' ' + tool.name;
+  document.getElementById('tool-modal-body').innerHTML = buildToolForm(id);
+  openModal('tool-modal');
+  if (id === 'image') initImageEditor();
+}
+
+function buildToolForm(id) {
+  const forms = {
+    resume: `
+      <div class="form-group"><label class="form-label">Full Name</label><input class="form-input" id="t-name" placeholder="e.g. Sumanth Kumar"></div>
+      <div class="form-group"><label class="form-label">Target Job Title</label><input class="form-input" id="t-job" placeholder="e.g. Software Engineer"></div>
+      <div class="form-group"><label class="form-label">Your Experience (bullet points)</label><textarea class="form-input" id="t-exp" rows="4" placeholder="- 2 years at XYZ as developer&#10;- Built e-commerce app&#10;- Led team of 3"></textarea></div>
+      <div class="form-group"><label class="form-label">Skills</label><input class="form-input" id="t-skills" placeholder="e.g. Python, React, SQL, Figma"></div>
+      <div class="form-group"><label class="form-label">Job Description (paste here)</label><textarea class="form-input" id="t-jd" rows="4" placeholder="Paste the job description here..."></textarea></div>
+      <div class="form-group"><label class="form-label">Tone</label><select class="form-select" id="t-tone"><option>Professional</option><option>Confident</option><option>Creative</option><option>Concise</option></select></div>
+      <button class="btn btn-primary" style="width:100%;margin-bottom:12px" onclick="runTool('resume')">✨ Generate Resume (1 credit)</button>
+      <div id="t-result"></div>`,
+
+    coverletter: `
+      <div class="form-group"><label class="form-label">Your Name</label><input class="form-input" id="t-name" placeholder="e.g. Priya Sharma"></div>
+      <div class="form-group"><label class="form-label">Job Title Applying For</label><input class="form-input" id="t-job" placeholder="e.g. Marketing Manager"></div>
+      <div class="form-group"><label class="form-label">Company Name</label><input class="form-input" id="t-company" placeholder="e.g. Infosys"></div>
+      <div class="form-group"><label class="form-label">Your Key Skills / Highlights</label><textarea class="form-input" id="t-skills" rows="3" placeholder="What makes you the best candidate?"></textarea></div>
+      <div class="form-group"><label class="form-label">Job Description</label><textarea class="form-input" id="t-jd" rows="4" placeholder="Paste job description here..."></textarea></div>
+      <button class="btn btn-primary" style="width:100%;margin-bottom:12px" onclick="runTool('coverletter')">✨ Generate Cover Letter (1 credit)</button>
+      <div id="t-result"></div>`,
+
+    interview: `
+      <div class="form-group"><label class="form-label">Job Role</label><input class="form-input" id="t-job" placeholder="e.g. Data Analyst"></div>
+      <div class="form-group"><label class="form-label">Experience Level</label><select class="form-select" id="t-level"><option>Fresher</option><option>1-3 years</option><option>3-5 years</option><option>5+ years</option></select></div>
+      <div class="chat-box" id="chat-box"><div class="chat-msg ai">Hi! I'm your AI interviewer. Click "Start Interview" to begin.</div></div>
+      <div class="chat-input-row">
+        <input class="form-input chat-input" id="chat-input" placeholder="Type your answer..." onkeypress="if(event.key==='Enter')sendAnswer()">
+        <button class="btn btn-primary" onclick="sendAnswer()">Send (1 credit)</button>
+      </div>
+      <button class="btn btn-outline" style="width:100%;margin-top:10px" onclick="startInterview()">🎯 Start Interview</button>`,
+
+    linkedin: `
+      <div class="form-group"><label class="form-label">Your Name</label><input class="form-input" id="t-name" placeholder="e.g. Rahul Verma"></div>
+      <div class="form-group"><label class="form-label">Current / Target Role</label><input class="form-input" id="t-job" placeholder="e.g. Product Manager at Amazon"></div>
+      <div class="form-group"><label class="form-label">Top Skills</label><input class="form-input" id="t-skills" placeholder="e.g. Product Strategy, Agile, Data-driven"></div>
+      <div class="form-group"><label class="form-label">Achievements</label><textarea class="form-input" id="t-ach" rows="3" placeholder="Key achievements or projects..."></textarea></div>
+      <div class="form-group"><label class="form-label">Tone</label><select class="form-select" id="t-tone"><option>Professional</option><option>Friendly</option><option>Bold & Direct</option></select></div>
+      <button class="btn btn-primary" style="width:100%;margin-bottom:12px" onclick="runTool('linkedin')">✨ Generate LinkedIn Bio (1 credit)</button>
+      <div id="t-result"></div>`,
+
+    coldemail: `
+      <div class="form-group"><label class="form-label">Your Name & Role</label><input class="form-input" id="t-name" placeholder="e.g. Ankit, Sales Executive at XYZ"></div>
+      <div class="form-group"><label class="form-label">Recipient (who you're emailing)</label><input class="form-input" id="t-target" placeholder="e.g. CEO of a fintech startup"></div>
+      <div class="form-group"><label class="form-label">Goal of the Email</label><input class="form-input" id="t-goal" placeholder="e.g. Schedule a 15-min call to discuss our software"></div>
+      <div class="form-group"><label class="form-label">Your Value Proposition</label><textarea class="form-input" id="t-value" rows="3" placeholder="What problem do you solve for them?"></textarea></div>
+      <button class="btn btn-primary" style="width:100%;margin-bottom:12px" onclick="runTool('coldemail')">✨ Generate 3 Emails (1 credit)</button>
+      <div id="t-result"></div>`,
+
+    business: `
+      <div class="form-group"><label class="form-label">Business Idea</label><input class="form-input" id="t-idea" placeholder="e.g. AI-powered tiffin delivery app in Hyderabad"></div>
+      <div class="form-group"><label class="form-label">Target Market</label><input class="form-input" id="t-market" placeholder="e.g. Working professionals aged 25-40 in Hyderabad"></div>
+      <div class="form-group"><label class="form-label">Initial Budget</label><input class="form-input" id="t-budget" placeholder="e.g. ₹5 lakhs"></div>
+      <div class="form-group"><label class="form-label">Your Skills / Resources</label><textarea class="form-input" id="t-skills" rows="2" placeholder="e.g. Marketing background, network of 50 restaurants"></textarea></div>
+      <button class="btn btn-primary" style="width:100%;margin-bottom:12px" onclick="runTool('business')">✨ Generate Business Plan (1 credit)</button>
+      <div id="t-result"></div>`,
+
+    salary: `
+      <div class="form-group"><label class="form-label">Your Current Salary</label><input class="form-input" id="t-current" placeholder="e.g. ₹8 LPA"></div>
+      <div class="form-group"><label class="form-label">Target Salary</label><input class="form-input" id="t-target" placeholder="e.g. ₹12 LPA"></div>
+      <div class="form-group"><label class="form-label">Role & Company</label><input class="form-input" id="t-job" placeholder="e.g. Senior Developer at TCS"></div>
+      <div class="form-group"><label class="form-label">Your Achievements</label><textarea class="form-input" id="t-ach" rows="3" placeholder="Why do you deserve this raise? Mention wins, projects, impact..."></textarea></div>
+      <button class="btn btn-primary" style="width:100%;margin-bottom:12px" onclick="runTool('salary')">✨ Generate Negotiation Script (1 credit)</button>
+      <div id="t-result"></div>`,
+
+    pitch: `
+      <div class="form-group"><label class="form-label">Startup Name & Idea</label><input class="form-input" id="t-idea" placeholder="e.g. FarmAI — AI crop disease detection for farmers"></div>
+      <div class="form-group"><label class="form-label">Problem You Solve</label><textarea class="form-input" id="t-problem" rows="3" placeholder="What pain point does your startup address?"></textarea></div>
+      <div class="form-group"><label class="form-label">Revenue Model</label><input class="form-input" id="t-model" placeholder="e.g. SaaS ₹299/month per farm"></div>
+      <div class="form-group"><label class="form-label">Funding Ask</label><input class="form-input" id="t-ask" placeholder="e.g. ₹50 lakhs seed round"></div>
+      <button class="btn btn-primary" style="width:100%;margin-bottom:12px" onclick="runTool('pitch')">✨ Generate Pitch Script (1 credit)</button>
+      <div id="t-result"></div>`,
+
+    youtube: `
+      <div class="form-group"><label class="form-label">Video Topic</label><input class="form-input" id="t-topic" placeholder="e.g. How to make ₹50,000/month with AI tools"></div>
+      <div class="form-group"><label class="form-label">Target Audience</label><input class="form-input" id="t-audience" placeholder="e.g. College students interested in side income"></div>
+      <div class="form-group"><label class="form-label">Video Length</label><select class="form-select" id="t-length"><option>Short (3-5 min)</option><option>Medium (8-12 min)</option><option>Long (15-20 min)</option></select></div>
+      <div class="form-group"><label class="form-label">Channel Style</label><select class="form-select" id="t-style"><option>Informational</option><option>Entertainment</option><option>Tutorial</option><option>Motivational</option></select></div>
+      <button class="btn btn-primary" style="width:100%;margin-bottom:12px" onclick="runTool('youtube')">✨ Generate Script (1 credit)</button>
+      <div id="t-result"></div>`,
+
+    captions: `
+      <div class="form-group"><label class="form-label">What's the Post About?</label><input class="form-input" id="t-topic" placeholder="e.g. Launching my new cafe in Banjara Hills"></div>
+      <div class="form-group"><label class="form-label">Platform</label><select class="form-select" id="t-platform"><option>Instagram</option><option>Twitter/X</option><option>LinkedIn</option><option>Facebook</option><option>All platforms</option></select></div>
+      <div class="form-group"><label class="form-label">Tone</label><select class="form-select" id="t-tone"><option>Fun & Engaging</option><option>Professional</option><option>Emotional</option><option>Promotional</option></select></div>
+      <button class="btn btn-primary" style="width:100%;margin-bottom:12px" onclick="runTool('captions')">✨ Generate 5 Captions (1 credit)</button>
+      <div id="t-result"></div>`,
+
+    blog: `
+      <div class="form-group"><label class="form-label">Blog Topic</label><input class="form-input" id="t-topic" placeholder="e.g. 10 ways AI is changing healthcare in India"></div>
+      <div class="form-group"><label class="form-label">Target Audience</label><input class="form-input" id="t-audience" placeholder="e.g. Healthcare professionals and startup founders"></div>
+      <div class="form-group"><label class="form-label">Blog Length</label><select class="form-select" id="t-length"><option>Short (500 words)</option><option>Medium (1000 words)</option><option>Long (1500 words)</option></select></div>
+      <div class="form-group"><label class="form-label">Key Points to Include</label><textarea class="form-input" id="t-points" rows="3" placeholder="Key points or sections you want covered..."></textarea></div>
+      <button class="btn btn-primary" style="width:100%;margin-bottom:12px" onclick="runTool('blog')">✨ Generate Blog Post (1 credit)</button>
+      <div id="t-result"></div>`,
+
+    adcopy: `
+      <div class="form-group"><label class="form-label">Product / Service</label><input class="form-input" id="t-product" placeholder="e.g. Cloud kitchen delivering healthy tiffins"></div>
+      <div class="form-group"><label class="form-label">Target Audience</label><input class="form-input" id="t-audience" placeholder="e.g. Working professionals in Hyderabad"></div>
+      <div class="form-group"><label class="form-label">Platform</label><select class="form-select" id="t-platform"><option>Google Ads</option><option>Facebook/Instagram</option><option>LinkedIn</option><option>All platforms</option></select></div>
+      <div class="form-group"><label class="form-label">Unique Selling Point</label><input class="form-input" id="t-usp" placeholder="e.g. Delivered in 30 min, home-cooked taste"></div>
+      <button class="btn btn-primary" style="width:100%;margin-bottom:12px" onclick="runTool('adcopy')">✨ Generate Ad Copy (1 credit)</button>
+      <div id="t-result"></div>`,
+
+    code: `
+      <div class="form-group"><label class="form-label">What do you want?</label><select class="form-select" id="t-codetype"><option>Write new code</option><option>Fix / debug code</option><option>Explain code</option><option>Optimize code</option><option>Convert to another language</option></select></div>
+      <div class="form-group"><label class="form-label">Programming Language</label><input class="form-input" id="t-lang" placeholder="e.g. Python, JavaScript, Java, C++, SQL..."></div>
+      <div class="form-group"><label class="form-label">Describe what you need</label><textarea class="form-input" id="t-desc" rows="5" placeholder="Describe your coding task, or paste your code here..."></textarea></div>
+      <button class="btn btn-primary" style="width:100%;margin-bottom:12px" onclick="runTool('code')">✨ Generate Code (1 credit)</button>
+      <div id="t-result"></div>`,
+
+    translate: `
+      <div class="form-group"><label class="form-label">Text to Translate</label><textarea class="form-input" id="t-text" rows="5" placeholder="Paste your text here..."></textarea></div>
+      <div class="form-group"><label class="form-label">From Language</label><input class="form-input" id="t-from" placeholder="e.g. English (or 'auto-detect')"></div>
+      <div class="form-group"><label class="form-label">To Language</label><input class="form-input" id="t-to" placeholder="e.g. Telugu, Hindi, Tamil, French..."></div>
+      <button class="btn btn-primary" style="width:100%;margin-bottom:12px" onclick="runTool('translate')">✨ Translate (1 credit)</button>
+      <div id="t-result"></div>`,
+
+    image: `
+      <div class="image-editor">
+        <div class="form-group">
+          <label class="form-label">Upload Image</label>
+          <input type="file" class="form-input" id="img-upload" accept="image/*" onchange="loadImage(event)">
+        </div>
+        <div class="canvas-area" id="canvas-area"><span>Upload an image to get started</span><canvas id="img-canvas"></canvas></div>
+        <div class="filter-buttons">
+          <button class="filter-btn" onclick="applyFilter('none')">🔄 Original</button>
+          <button class="filter-btn" onclick="applyFilter('grayscale')">⬛ Grayscale</button>
+          <button class="filter-btn" onclick="applyFilter('sepia')">🟤 Sepia</button>
+          <button class="filter-btn" onclick="applyFilter('bright')">☀️ Brighten</button>
+          <button class="filter-btn" onclick="applyFilter('contrast')">🔳 Contrast</button>
+          <button class="filter-btn" onclick="applyFilter('blur')">🌫️ Blur</button>
+          <button class="filter-btn" onclick="applyFilter('invert')">🔀 Invert</button>
+        </div>
+        <button class="btn btn-primary" onclick="downloadImage()">⬇️ Download Image</button>
+      </div>`,
+
+    imageprompt: `
+      <div class="form-group"><label class="form-label">Describe your image idea</label><textarea class="form-input" id="t-idea" rows="3" placeholder="e.g. A cozy Indian cafe with warm lights, rainy weather outside, people reading books"></textarea></div>
+      <div class="form-group"><label class="form-label">Art Style</label><select class="form-select" id="t-style"><option>Photorealistic</option><option>Anime / Illustration</option><option>Oil Painting</option><option>Watercolor</option><option>Cyberpunk</option><option>Minimalist</option></select></div>
+      <div class="form-group"><label class="form-label">Mood</label><select class="form-select" id="t-mood"><option>Peaceful & Calm</option><option>Dramatic & Epic</option><option>Dark & Moody</option><option>Bright & Cheerful</option><option>Mysterious</option></select></div>
+      <button class="btn btn-primary" style="width:100%;margin-bottom:12px" onclick="runTool('imageprompt')">✨ Generate 5 Prompts (1 credit)</button>
+      <div id="t-result"></div>`,
+  };
+  return forms[id] || '<p>Tool not found</p>';
+}
+
+// ===== BUILD PROMPTS =====
+function buildPrompt(id) {
+  const g = (el) => { const e = document.getElementById(el); return e ? e.value.trim() : ''; };
+  const prompts = {
+    resume: `Create a professional ATS-optimized resume for ${g('t-name')} applying for ${g('t-job')}.\n\nExperience:\n${g('t-exp')}\n\nSkills: ${g('t-skills')}\n\nJob Description:\n${g('t-jd')}\n\nTone: ${g('t-tone')}\n\nFormat with clear sections: Summary, Skills, Experience, Education. Use bullet points. Make it ATS-friendly and impactful.`,
+    coverletter: `Write a compelling cover letter for ${g('t-name')} applying to ${g('t-company')} for ${g('t-job')}.\n\nKey Skills: ${g('t-skills')}\nJob Description: ${g('t-jd')}\n\nMake it personal, enthusiastic, and tailored to the job. 3-4 paragraphs. Professional closing.`,
+    linkedin: `Write a LinkedIn profile for ${g('t-name')} targeting ${g('t-job')}.\n\nSkills: ${g('t-skills')}\nAchievements: ${g('t-ach')}\nTone: ${g('t-tone')}\n\nProvide:\n1. A powerful Headline (under 220 chars)\n2. An engaging About section (under 2600 chars) with story, skills, and CTA.`,
+    coldemail: `Write 3 cold email variations for ${g('t-name')} reaching out to ${g('t-target')}.\n\nGoal: ${g('t-goal')}\nValue Proposition: ${g('t-value')}\n\nLabel each email as Option A, B, C with different approaches (direct, soft, story-based). Include subject lines.`,
+    business: `Create a full business plan for: ${g('t-idea')}\n\nTarget Market: ${g('t-market')}\nInitial Budget: ${g('t-budget')}\nSkills/Resources: ${g('t-skills')}\n\nInclude: Executive Summary, Problem & Solution, Target Market, Revenue Model, Marketing Strategy, Financial Projections (Year 1), Risk Analysis, Action Plan (first 90 days).`,
+    salary: `Create a salary negotiation script for someone currently earning ${g('t-current')} who wants ${g('t-target')} for ${g('t-job')}.\n\nAchievements: ${g('t-ach')}\n\nProvide: Opening statement, key talking points, how to handle pushback, closing. Make it confident but professional.`,
+    pitch: `Create an investor pitch deck script for: ${g('t-idea')}\n\nProblem: ${g('t-problem')}\nRevenue Model: ${g('t-model')}\nFunding Ask: ${g('t-ask')}\n\nFormat: Problem → Solution → Market Size → Business Model → Traction → Team → Ask. Include talking points for each slide.`,
+    youtube: `Write a full YouTube video script on: "${g('t-topic')}"\n\nTarget Audience: ${g('t-audience')}\nLength: ${g('t-length')}\nStyle: ${g('t-style')}\n\nInclude: Hook (first 30 sec), Introduction, 5-7 main sections with talking points, transitions, CTA, outro. Make it engaging and ready to read.`,
+    captions: `Write 5 social media captions for: "${g('t-topic')}"\n\nPlatform: ${g('t-platform')}\nTone: ${g('t-tone')}\n\nFor each caption include: the caption text + 10 relevant hashtags. Vary the style and hooks. Number them 1-5.`,
+    blog: `Write a ${g('t-length')} SEO-optimized blog post on: "${g('t-topic')}"\n\nAudience: ${g('t-audience')}\nKey points to include: ${g('t-points')}\n\nInclude: SEO title, meta description, introduction with hook, structured sections with subheadings (H2/H3), conclusion with CTA.`,
+    adcopy: `Write compelling ad copy for ${g('t-product')} targeting ${g('t-audience')} on ${g('t-platform')}.\n\nUSP: ${g('t-usp')}\n\nProvide:\n- Headline (under 30 chars)\n- Description (under 90 chars)\n- Long body copy (2-3 sentences)\n- 3 CTA variants\n- 2 full ad versions`,
+    code: `${g('t-codetype')} in ${g('t-lang')}:\n\n${g('t-desc')}\n\nProvide clean, well-commented, production-ready code. Include explanations for key parts.`,
+    translate: `Translate the following text from ${g('t-from')} to ${g('t-to')}. Maintain the original meaning, tone, and formatting exactly.\n\nText to translate:\n${g('t-text')}`,
+    imageprompt: `Create 5 detailed image generation prompts for:\nIdea: ${g('t-idea')}\nStyle: ${g('t-style')}\nMood: ${g('t-mood')}\n\nEach prompt should be 50-80 words and include: subject description, lighting, camera angle, art style, quality modifiers (e.g. 4K, highly detailed, masterpiece). Number them 1-5.`,
+  };
+  return prompts[id] || '';
+}
+
+// ===== RUN TOOL =====
+async function runTool(id) {
+  if (!state.user) { showToast('Please sign in first', 'warning'); openAuth(); return; }
+  if (!state.isPro && state.credits <= 0) { showToast('No credits left! Buy more or watch ads.', 'warning'); openBuyCredits(); return; }
+
+  const prompt = buildPrompt(id);
+  if (!prompt || prompt.length < 20) { showToast('Please fill in the required fields', 'warning'); return; }
+
+  const resultEl = document.getElementById('t-result');
+  if (!resultEl) return;
+  resultEl.innerHTML = `<div class="result-box"><span class="loading-spinner"></span> Generating with AI... (~15-30 sec)</div>`;
+
+  try {
+    const res = await fetch(WORKER_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ prompt })
+    });
+    const data = await res.json();
+    const text = data.result || data.response || 'No result returned. Please try again.';
+
+    if (!state.isPro) { state.credits--; saveState(); updateUI(); }
+
+    // Save history
+    state.history.unshift({ tool: id, prompt: prompt.slice(0,100), result: text.slice(0,500), time: new Date().toLocaleString() });
+    saveState();
+
+    resultEl.innerHTML = `
+      <div class="result-box">${text.replace(/\n/g,'<br>')}</div>
+      <div class="result-actions">
+        <button class="btn btn-sm btn-outline" onclick="copyResult(this)">📋 Copy</button>
+        <button class="btn btn-sm btn-outline" onclick="downloadTxt()">⬇️ TXT</button>
+        <button class="btn btn-sm btn-outline" onclick="downloadPdf()">📄 PDF</button>
+      </div>`;
+    window._lastResult = text;
+    showToast('Generated successfully! 🎉', 'success');
+  } catch(e) {
+    resultEl.innerHTML = `<div class="result-box" style="color:var(--danger)">Connection error. Please check your internet and try again.</div>`;
+    showToast('Generation failed. Try again.', 'error');
+  }
+}
+
+// ===== INTERVIEW =====
+let interviewMessages = [];
+async function startInterview() {
+  const role = document.getElementById('t-job')?.value || 'Software Engineer';
+  const level = document.getElementById('t-level')?.value || 'Fresher';
+  interviewMessages = [{ role: 'system', content: `You are a professional job interviewer. Conduct a mock interview for a ${role} position (${level} level). Ask ONE question at a time. After each answer, give brief feedback (1 sentence), then ask the next question. Start with "Tell me about yourself."` }];
+  addChatMsg('ai', '🎤 Interview started! I\'ll ask you questions one by one. Ready? Tell me about yourself.');
+}
+
+async function sendAnswer() {
+  if (!state.user) { showToast('Please sign in first', 'warning'); return; }
+  if (!state.isPro && state.credits <= 0) { showToast('No credits left!', 'warning'); return; }
+  const input = document.getElementById('chat-input');
+  if (!input || !input.value.trim()) return;
+  const answer = input.value.trim();
+  input.value = '';
+  addChatMsg('user', answer);
+  interviewMessages.push({ role: 'user', content: answer });
+  addChatMsg('ai', '⏳ Thinking...');
+  if (!state.isPro) { state.credits--; saveState(); updateUI(); }
+  try {
+    const promptText = interviewMessages.map(m => m.role + ': ' + m.content).join('\n');
+    const res = await fetch(WORKER_URL, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ prompt: promptText + '\nassistant:' }) });
+    const data = await res.json();
+    const reply = data.result || data.response || 'Could not get response.';
+    const chatBox = document.getElementById('chat-box');
+    if (chatBox) chatBox.lastChild.remove();
+    addChatMsg('ai', reply);
+    interviewMessages.push({ role: 'assistant', content: reply });
+  } catch { addChatMsg('ai', 'Error connecting. Try again.'); }
+}
+
+function addChatMsg(who, text) {
+  const box = document.getElementById('chat-box');
+  if (!box) return;
+  const div = document.createElement('div');
+  div.className = 'chat-msg ' + who;
+  div.textContent = text;
+  box.appendChild(div);
+  box.scrollTop = box.scrollHeight;
+}
+
+// ===== RESULT ACTIONS =====
+function copyResult(btn) {
+  if (!window._lastResult) return;
+  navigator.clipboard.writeText(window._lastResult).then(() => { btn.textContent = '✅ Copied!'; setTimeout(() => btn.textContent = '📋 Copy', 2000); });
+}
+function downloadTxt() {
+  if (!window._lastResult) return;
+  const a = document.createElement('a');
+  a.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(window._lastResult);
+  a.download = 'toolsai-result.txt';
+  a.click();
+}
+function downloadPdf() {
+  if (!window._lastResult) return;
+  const w = window.open('','_blank');
+  w.document.write(`<html><head><title>ToolsAI Result</title><style>body{font-family:sans-serif;padding:30px;line-height:1.7;max-width:800px;margin:0 auto}pre{white-space:pre-wrap}</style></head><body><pre>${window._lastResult}</pre></body></html>`);
+  w.document.close();
+  w.print();
+}
+
+// ===== IMAGE EDITOR =====
+let originalImg = null;
+function initImageEditor() {}
+function loadImage(evt) {
+  const file = evt.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    const img = new Image();
+    img.onload = () => {
+      originalImg = img;
+      const canvas = document.getElementById('img-canvas');
+      canvas.width = img.width;
+      canvas.height = img.height;
+      canvas.getContext('2d').drawImage(img, 0, 0);
+      canvas.style.display = 'block';
+      document.querySelector('.canvas-area span') && (document.querySelector('.canvas-area span').style.display = 'none');
+    };
+    img.src = e.target.result;
+  };
+  reader.readAsDataURL(file);
+}
+function applyFilter(filter) {
+  const canvas = document.getElementById('img-canvas');
+  if (!canvas || !originalImg) { showToast('Please upload an image first', 'warning'); return; }
+  const ctx = canvas.getContext('2d');
+  ctx.drawImage(originalImg, 0, 0);
+  const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  const d = imageData.data;
+  for (let i = 0; i < d.length; i += 4) {
+    const r = d[i], g = d[i+1], b = d[i+2];
+    if (filter === 'grayscale') { const gray = 0.3*r+0.59*g+0.11*b; d[i]=d[i+1]=d[i+2]=gray; }
+    else if (filter === 'sepia') { d[i]=Math.min(255,r*0.393+g*0.769+b*0.189); d[i+1]=Math.min(255,r*0.349+g*0.686+b*0.168); d[i+2]=Math.min(255,r*0.272+g*0.534+b*0.131); }
+    else if (filter === 'bright') { d[i]=Math.min(255,r+40); d[i+1]=Math.min(255,g+40); d[i+2]=Math.min(255,b+40); }
+    else if (filter === 'contrast') { const f=1.5; const adj=128*(1-f); d[i]=Math.min(255,Math.max(0,r*f+adj)); d[i+1]=Math.min(255,Math.max(0,g*f+adj)); d[i+2]=Math.min(255,Math.max(0,b*f+adj)); }
+    else if (filter === 'invert') { d[i]=255-r; d[i+1]=255-g; d[i+2]=255-b; }
+  }
+  if (filter !== 'none') ctx.putImageData(imageData, 0, 0);
+  if (filter === 'blur') { ctx.filter = 'blur(4px)'; ctx.drawImage(originalImg,0,0); ctx.filter='none'; }
+  showToast('Filter applied!', 'success');
+}
+function downloadImage() {
+  const canvas = document.getElementById('img-canvas');
+  if (!canvas || !originalImg) { showToast('Upload an image first', 'warning'); return; }
+  const a = document.createElement('a');
+  a.href = canvas.toDataURL('image/png');
+  a.download = 'toolsai-image.png';
+  a.click();
+}
+
+// ===== PAYMENTS =====
+function openBuyCredits() {
+  if (!state.user) { showToast('Please sign in first', 'warning'); openAuth(); return; }
+  openModal('buy-modal');
+}
+function buyPack(credits, amount) {
+  const options = {
+    key: 'rzp_test_XXXXXXXXXXXXXXXX',
+    amount: amount * 100,
+    currency: 'INR',
+    name: 'ToolsAI',
+    description: credits === 'unlimited' ? 'Pro Plan - Unlimited' : credits + ' Credits',
+    image: '',
+    handler: function(response) {
+      if (credits === 'unlimited') { state.isPro = true; localStorage.setItem('tai_pro','true'); showToast('🎉 You are now Pro! Unlimited access unlocked!', 'success'); }
+      else { state.credits += credits; showToast('🎉 ' + credits + ' credits added to your account!', 'success'); }
+      saveState(); updateUI(); closeModal('buy-modal');
+    },
+    prefill: { email: state.user?.email || '' },
+    theme: { color: '#6c63ff' }
+  };
+  try { new Razorpay(options).open(); }
+  catch { showToast('Payment system loading... Please try again.', 'warning'); }
+}
+
+// ===== AD WATCH =====
+let adTimer = null;
+let adProgress = 0;
+let currentAd = 0;
+
+function checkAdDay() {
+  const today = new Date().toDateString();
+  if (state.adDay !== today) { state.adDay = today; state.adCount = 0; saveState(); }
+}
+
+function openAdWatch() {
+  if (!state.user) { showToast('Please sign in to earn credits', 'warning'); openAuth(); return; }
+  checkAdDay();
+  updateAdDailyUI();
+  document.getElementById('ad-watch-content').style.display = 'block';
+  document.getElementById('ad-playing').style.display = 'none';
+  openModal('adwatch-modal');
+}
+
+function updateAdDailyUI() {
+  const pct = (state.adCount / 10) * 100;
+  const fill = document.getElementById('daily-bar-fill');
+  const cnt = document.getElementById('daily-count');
+  if (fill) fill.style.width = pct + '%';
+  if (cnt) cnt.textContent = state.adCount + '/10';
+}
+
+function startAdSession() {
+  checkAdDay();
+  if (state.adCount >= 10) { showToast('Daily limit reached! Come back tomorrow.', 'warning'); return; }
+  currentAd = 0;
+  state.adSession = { running: true, adsWatched: 0 };
+  document.getElementById('ad-watch-content').style.display = 'none';
+  document.getElementById('ad-playing').style.display = 'block';
+  document.getElementById('collect-btn').style.display = 'none';
+  playNextAd();
+}
+
+function playNextAd() {
+  if (currentAd >= 3) {
+    document.getElementById('collect-btn').style.display = 'block';
+    document.getElementById('ad-countdown').textContent = '✅ All 3 ads watched! Collect your credit.';
+    return;
+  }
+  currentAd++;
+  const ad = AD_SAMPLES[Math.floor(Math.random() * AD_SAMPLES.length)];
+  document.getElementById('ad-emoji').textContent = ad.emoji;
+  document.getElementById('ad-title').textContent = ad.title;
+  document.getElementById('ad-subtitle').textContent = ad.subtitle;
+  document.getElementById('cur-ad').textContent = currentAd;
+  adProgress = 0;
+  document.getElementById('ad-progress-bar').style.width = '0%';
+  let secs = 15;
+  document.getElementById('ad-countdown').textContent = '⏱ ' + secs + ' seconds remaining';
+  if (adTimer) clearInterval(adTimer);
+  adTimer = setInterval(() => {
+    secs--;
+    adProgress = ((15 - secs) / 15) * 100;
+    document.getElementById('ad-progress-bar').style.width = adProgress + '%';
+    document.getElementById('ad-countdown').textContent = secs > 0 ? '⏱ ' + secs + ' seconds remaining' : '✅ Ad complete!';
+    if (secs <= 0) { clearInterval(adTimer); setTimeout(playNextAd, 800); }
+  }, 1000);
+}
+
+function collectCredit() {
+  checkAdDay();
+  if (state.adCount >= 10) { showToast('Daily limit reached!', 'warning'); return; }
+  state.credits++;
+  state.adCount++;
+  saveState();
+  updateUI();
+  updateAdDailyUI();
+  showToast('🎁 +1 Credit earned!', 'success');
+  if (state.adCount < 10) {
+    document.getElementById('collect-btn').style.display = 'none';
+    document.getElementById('ad-watch-content').style.display = 'block';
+    document.getElementById('ad-playing').style.display = 'none';
+  } else {
+    closeModal('adwatch-modal');
+    showToast('🎉 Daily limit reached! 10 credits earned today. Come back tomorrow!', 'success');
+  }
+}
+
+function stopAd() { if (adTimer) clearInterval(adTimer); }
+
+// ===== FAQ =====
+function renderFAQ() {
+  const list = document.getElementById('faq-list');
+  if (!list) return;
+  list.innerHTML = FAQS.map((f, i) => `
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(${i})">
+        <span>${f.q}</span><span id="faq-icon-${i}">+</span>
+      </div>
+      <div class="faq-a" id="faq-a-${i}">${f.a}</div>
+    </div>`).join('');
+}
+function toggleFaq(i) {
+  const a = document.getElementById('faq-a-' + i);
+  const icon = document.getElementById('faq-icon-' + i);
+  const isOpen = a.classList.toggle('open');
+  icon.textContent = isOpen ? '−' : '+';
+}
+
+// ===== MISC =====
+function setLang(lang) {
+  state.lang = lang;
+  saveState();
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.textContent === (lang==='en'?'EN':lang==='hi'?'हि':lang==='te'?'తె':'த')));
+  showToast('Language: ' + lang.toUpperCase(), 'info');
+}
+
+function submitToolRequest() {
+  const input = document.getElementById('tool-request-input');
+  if (!input || !input.value.trim()) { showToast('Please describe the tool you want', 'warning'); return; }
+  showToast('Thanks! We\'ll consider "' + input.value + '" for our next update. 🙏', 'success');
+  input.value = '';
+}
+
+function submitContact() {
+  const name = document.getElementById('contact-name')?.value.trim();
+  const email = document.getElementById('contact-email')?.value.trim();
+  const subject = document.getElementById('contact-subject')?.value.trim();
+  const msg = document.getElementById('contact-msg')?.value.trim();
+  if (!name || !email || !subject || !msg) { showToast('Please fill all fields', 'warning'); return; }
+  showToast('Message sent! We\'ll reply within 24 hours. ✅', 'success');
+  ['contact-name','contact-email','contact-subject','contact-msg'].forEach(id => { const e = document.getElementById(id); if(e) e.value=''; });
+}
+
+// ===== INIT =====
+function init() {
+  renderTools(TOOLS);
+  renderFAQ();
+  updateUI();
+  // Restore user credits from users store
+  if (state.user) {
+    const users = JSON.parse(localStorage.getItem('tai_users') || '{}');
+    const u = use
